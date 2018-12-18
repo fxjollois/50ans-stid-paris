@@ -1,0 +1,49 @@
+/* palette color : https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes12 */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: #3b3a30;
+}
+
+h1, p {
+    font-family: 'IM Fell French Canon', serif;
+}
+
+.item {
+    stroke: #3b3a30;
+}
+.DUT {
+    fill: #e4d1d1;
+}
+.LP {
+    fill: #b9b0b0;
+}
+.DU {
+    fill: #d9ecd0;
+}
+.autre {
+    fill: #77a8a8;
+}
+
+
+.periode {
+    fill: #c0ded9;
+}
+.alterne {
+    fill: #b2c2bf;
+}
+
+.chef-text {
+    font-size: .75em;
+}
+
+.separation {
+    stroke: #3b3a30;
+    stroke-width: 1px;
+    stroke-dasharray: 4 2;
+}
+
+.infos {
+    font-family: 'IM Fell French Canon', serif;
+}
