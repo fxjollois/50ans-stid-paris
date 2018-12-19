@@ -13,6 +13,9 @@ h1, p {
 .item {
     stroke: #3b3a30;
 }
+.item-text {
+    font-weight: bold;
+}
 .DUT {
     fill: #e4d1d1;
 }
@@ -35,7 +38,7 @@ h1, p {
 }
 
 .chef-text {
-    font-size: .75em;
+    font-size: .9em;
 }
 
 .separation {
@@ -46,4 +49,7 @@ h1, p {
 
 .infos {
     font-family: 'IM Fell French Canon', serif;
+}
+.tick text {
+    font-size: 1.5em;
 }

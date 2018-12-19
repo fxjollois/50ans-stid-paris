@@ -1,6 +1,6 @@
-/*global d3,console*/
+/*global d3*/
 
-var margin = {top: 40, right: 0, bottom: 40, left: 0},
+var margin = {top: 40, right: 20, bottom: 40, left: 0},
     widthGlobal = 1200,
     width = widthGlobal - margin.left - margin.right,
     heightGlobal = 500,
@@ -38,9 +38,9 @@ var margin = {top: 40, right: 0, bottom: 40, left: 0},
     chefs = [
         {content: 'Pierre Lecointe', start: new Date(1968, 9, 1), end: new Date(1975, 8, 31), classe: 'periode'},
         {content: 'Francis Maurin', start: new Date(1975, 9, 1), end: new Date(1982, 4, 30), classe: 'alterne'},
-        {content: 'Michèle Maleus', start: new Date(1982, 5, 1), end: new Date(1986, 8, 31), classe: 'periode'},
+        {content: 'Michèle Mallèus', start: new Date(1982, 5, 1), end: new Date(1986, 8, 31), classe: 'periode'},
         {content: 'Serge Blumenthal', start: new Date(1986, 9, 1), end: new Date(1989, 8, 31), classe: 'alterne'},
-        {content: 'Michèle Maleus', start: new Date(1989, 9, 1), end: new Date(1996, 6, 30), classe: 'periode'},
+        {content: 'Michèle Mallèus', start: new Date(1989, 9, 1), end: new Date(1996, 6, 30), classe: 'periode'},
         {content: 'Serge Blumenthal', start: new Date(1996, 7, 1), end: new Date(2002, 8, 31), classe: 'alterne'},
         {content: 'Michel Larmande', start: new Date(2002, 9, 1), end: new Date(2008, 8, 31), classe: 'periode'},
         {content: 'Guillaume Bordry', start: new Date(2008, 9, 1), end: new Date(2010, 12, 31), classe: 'alterne'},
@@ -64,8 +64,8 @@ var margin = {top: 40, right: 0, bottom: 40, left: 0},
         {group: "DU 1", content: "Big data", start: new Date(2014, 1, 1), end: fin, classe: "DU"},
         {group: "DU 2", content: "Dataviz", start: new Date(2015, 1, 1), end: fin, classe: "DU"},
   
-        {group: "Autres 1", content: "Concours Dataviz", start: new Date(2015, 5, 18), end: fin, classe: "autre"},
-        {group: "Autres 2", content: "Réunion anciens", start: new Date(2008, 1, 1), end: fin, classe: "autre"}
+        {group: "Autres 1", content: "Concours <tspan dy = .4cm dx = -.4cm>Dataviz</tspan>", start: new Date(2015, 5, 18), end: fin, classe: "autre"},
+        {group: "Autres 2", content: "Réunions anciens", start: new Date(2008, 1, 1), end: fin, classe: "autre"}
     ];
 
 timeline.append("g")
@@ -103,7 +103,7 @@ timeline.append("text")
     .attr("class", "infos")
     .attr("x", 5)
     .attr("y", y("DU 2"))
-    .html("Diplôme d'Université (FC)")
+    .html("Diplômes d'Université (FC)")
 timeline.append("text")
     .attr("class", "infos")
     .attr("x", 5)
