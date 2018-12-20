@@ -1,0 +1,28 @@
+body {
+    color: #3b3a30;
+}
+
+a, strong {
+    color: black;
+    font-weight: bold;
+}
+.area {
+    fill: #77a8a8;
+}
+
+.vertical {
+    fill: none;
+    stroke: rgba(59, 58, 48, 0.5);
+    stroke-width: 1px;
+    stroke-dasharray: 4 2;
+}
+
+.y .tick line, .axis .domain {
+    visibility: hidden;
+}
+.axis text {
+    font-size: 1.5em;
+}
+.y text {
+    font-weight: bold;
+}
