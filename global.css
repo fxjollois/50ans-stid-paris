@@ -1,0 +1,13 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, p {
+    font-family: 'IM Fell French Canon', serif;
+}
+
+a {
+    text-decoration: none;
+}
