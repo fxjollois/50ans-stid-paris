@@ -1,7 +1,7 @@
 /*global d3*/
 
 var margin = {top: 40, right: 20, bottom: 40, left: 0},
-    widthGlobal = 1200,
+    widthGlobal = d3.select("body").node().getBoundingClientRect().width,
     width = widthGlobal - margin.left - margin.right,
     heightGlobal = 500,
     height = heightGlobal - margin.top - margin.bottom,
@@ -12,11 +12,7 @@ var margin = {top: 40, right: 20, bottom: 40, left: 0},
         .domain([new Date(1968, 9, 1), fin])
         .range([0, width]),
     xAxis = d3.axisBottom()
-        .scale(x)
-		// .ticks(50)
-		//.tickFormat(formatNumber)
-		// .orient("bottom")
-,
+        .scale(x),
     
     y = d3.scaleBand()
         .domain(["DUT", "DUT AS", "DUT FA", "LP 1", "LP 2", "DU 1", "DU 2", "Autres 1", "Autres 2"])
@@ -36,17 +32,17 @@ var margin = {top: 40, right: 20, bottom: 40, left: 0},
     
     // chefs de dep
     chefs = [
-        {content: 'Pierre Lecointe', start: new Date(1968, 9, 1), end: new Date(1975, 8, 31), classe: 'periode'},
-        {content: 'Francis Maurin', start: new Date(1975, 9, 1), end: new Date(1982, 4, 30), classe: 'alterne'},
-        {content: 'Michèle Mallèus', start: new Date(1982, 5, 1), end: new Date(1986, 8, 31), classe: 'periode'},
-        {content: 'Serge Blumenthal', start: new Date(1986, 9, 1), end: new Date(1989, 8, 31), classe: 'alterne'},
-        {content: 'Michèle Mallèus', start: new Date(1989, 9, 1), end: new Date(1996, 6, 30), classe: 'periode'},
-        {content: 'Serge Blumenthal', start: new Date(1996, 7, 1), end: new Date(2002, 8, 31), classe: 'alterne'},
-        {content: 'Michel Larmande', start: new Date(2002, 9, 1), end: new Date(2008, 8, 31), classe: 'periode'},
-        {content: 'Guillaume Bordry', start: new Date(2008, 9, 1), end: new Date(2010, 12, 31), classe: 'alterne'},
-        {content: 'François-Xavier Jollois', start: new Date(2011, 1, 1), end: new Date(2014, 8, 31), classe: 'periode'},
-        {content: 'Florence Muri', start: new Date(2014, 9, 1), end: new Date(2017, 8, 31), classe: 'alterne'},
-        {content: 'Servane Gey', start: new Date(2017, 9, 1), end: fin, classe: 'periode'}
+        {content: 'P. Lecointe', start: new Date(1968, 9, 1), end: new Date(1975, 8, 31), classe: 'periode'},
+        {content: 'F. Maurin', start: new Date(1975, 9, 1), end: new Date(1982, 4, 30), classe: 'alterne'},
+        {content: 'M. Mallèus', start: new Date(1982, 5, 1), end: new Date(1986, 8, 31), classe: 'periode'},
+        {content: 'S. Blumenthal', start: new Date(1986, 9, 1), end: new Date(1989, 8, 31), classe: 'alterne'},
+        {content: 'M. Mallèus', start: new Date(1989, 9, 1), end: new Date(1996, 6, 30), classe: 'periode'},
+        {content: 'S. Blumenthal', start: new Date(1996, 7, 1), end: new Date(2002, 8, 31), classe: 'alterne'},
+        {content: 'M. Larmande', start: new Date(2002, 9, 1), end: new Date(2008, 8, 31), classe: 'periode'},
+        {content: 'G. Bordry', start: new Date(2008, 9, 1), end: new Date(2010, 12, 31), classe: 'alterne'},
+        {content: 'F.-X. Jollois', start: new Date(2011, 1, 1), end: new Date(2014, 8, 31), classe: 'periode'},
+        {content: 'F. Muri', start: new Date(2014, 9, 1), end: new Date(2017, 8, 31), classe: 'alterne'},
+        {content: 'S. Gey', start: new Date(2017, 9, 1), end: fin, classe: 'periode'}
     ],
     // Data
     items = [
@@ -64,7 +60,7 @@ var margin = {top: 40, right: 20, bottom: 40, left: 0},
         {group: "DU 1", content: "Big data", start: new Date(2014, 1, 1), end: fin, classe: "DU"},
         {group: "DU 2", content: "Dataviz", start: new Date(2015, 1, 1), end: fin, classe: "DU"},
   
-        {group: "Autres 1", content: "Concours <tspan dy = .4cm dx = -.4cm>Dataviz</tspan>", start: new Date(2015, 5, 18), end: fin, classe: "autre"},
+        {group: "Autres 1", content: "Concours <tspan dy = .4cm dx = -1.5cm>Dataviz</tspan>", start: new Date(2015, 5, 18), end: fin, classe: "autre"},
         {group: "Autres 2", content: "Réunions anciens", start: new Date(2008, 1, 1), end: fin, classe: "autre"}
     ];
 

@@ -1,13 +1,8 @@
 /* palette color : https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes12 */
 
 body {
-    font-family: 'Open Sans', sans-serif;
     color: #fff;
     background: #3b3a30;
-}
-
-h1, p {
-    font-family: 'IM Fell French Canon', serif;
 }
 
 .item {
