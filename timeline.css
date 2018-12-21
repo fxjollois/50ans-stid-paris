@@ -1,6 +1,6 @@
 /* palette color : https://www.w3schools.com/colors/tryit.asp?filename=trycolors_palettes12 */
 
-body {
+body, strong {
     color: #fff;
     background: #3b3a30;
 }
