@@ -1,0 +1,38 @@
+body {
+    color: #fff;
+    background: #3b3a30;
+}
+
+.line {
+    fill: none;
+    stroke-width: 3;
+}
+.lineC {
+    stroke: #77a8a8;
+}
+.lineI {
+    stroke: #e4d1d1;
+}
+text.lineC {
+    fill: #77a8a8;
+}
+text.lineI  {
+    fill: #e4d1d1;
+}
+
+.x .tick text {
+    transform: translate(-25px, 20px) rotate(-45deg) !important;
+}
+.tick text {
+    font-size: 1.5em;    
+}
+.domain, .tick line {
+    visibility: hidden;
+}
+
+.horizontal, .vertical {
+    fill: none;
+    stroke: rgba(200, 200, 200, 0.5);
+    stroke-width: 1px;
+    stroke-dasharray: 4 2;
+}
