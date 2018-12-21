@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>50 ans du département STID Paris</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="global.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src=" https://cdn.rawgit.com/showdownjs/showdown/1.9.0/dist/showdown.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon|Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div id = "contenu"></div>
+        <script>
+            var converter = new showdown.Converter();
+            
+            d3.text("README.md").then(function(text) {
+                var result = converter.makeHtml(text);
+                // console.log(text); // Hello, world!
+                d3.select("#contenu").html(result);
+            });
+            // console.log(a);
+        </script>
+    </body>
+</html>
