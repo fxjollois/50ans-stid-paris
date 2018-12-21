@@ -2,10 +2,6 @@ body {
     color: #3b3a30;
 }
 
-a, strong {
-    color: black;
-    font-weight: bold;
-}
 .area {
     fill: #77a8a8;
 }
