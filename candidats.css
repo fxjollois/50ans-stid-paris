@@ -1,4 +1,4 @@
-body {
+body, strong {
     color: #fff;
     background: #3b3a30;
 }
@@ -21,7 +21,7 @@ text.lineI  {
 }
 
 .x .tick text {
-    transform: translate(-25px, 20px) rotate(-45deg) !important;
+    transform: translate(-20px, 15px) rotate(-45deg) !important;
 }
 .tick text {
     font-size: 1.5em;    
