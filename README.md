@@ -5,3 +5,6 @@ Dans le cadre des 50 ans de l'IUT, nous avons développé une [frise](timeline.h
 - [Frise temporelle](timeline.html)
 - [Mots-clés](motscles.html)
 - [Candidats](candidats.html)
+
+
+[roulement automatique](timeline_dif.html)
