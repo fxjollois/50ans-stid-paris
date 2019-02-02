@@ -27,7 +27,7 @@
         { annee: "2018-2019", candidats: 1201, inscrits: 102 }
     ],
 
-        margin = {top: 20, right: 0, bottom: 70, left: 50},
+        margin = {top: 20, right: 80, bottom: 70, left: 50},
         widthGlobal = d3.select("body").node().getBoundingClientRect().width,
         width = widthGlobal - margin.left - margin.right,
         heightGlobal = 400,
@@ -91,5 +91,18 @@
         .attr("class", "y axis")
         .call(d3.axisLeft().scale(y));
     
+    // Pas très propre mais cela fonctionne
+    candidats.append("text")
+        .attr("class", "legende lineI")
+        .attr("x", x(2018) + x.bandwidth() / 2 + 5)
+        .attr("y", y(100))
+        .attr("text-anchor", "start")
+        .text("Inscrits");
+    candidats.append("text")
+        .attr("class", "legende lineC")
+        .attr("x", x(2018) + x.bandwidth() / 2 + 5)
+        .attr("y", y(1200))
+        .attr("text-anchor", "start")
+        .text("Candidats");
     // console.log(y1.ticks());
 }());
