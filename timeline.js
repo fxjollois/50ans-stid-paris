@@ -43,7 +43,8 @@
             {content: 'G. Bordry', start: new Date(2008, 9, 1), end: new Date(2010, 12, 31), classe: 'alterne'},
             {content: 'F.-X. Jollois', start: new Date(2011, 1, 1), end: new Date(2014, 8, 31), classe: 'periode'},
             {content: 'F. Muri', start: new Date(2014, 9, 1), end: new Date(2017, 8, 31), classe: 'alterne'},
-            {content: 'S. Gey', start: new Date(2017, 9, 1), end: fin, classe: 'periode'}
+            {content: 'S. Gey', start: new Date(2017, 9, 1), end: new Date(2019, 8, 31), classe: 'periode'},
+            {content: 'J. Dedecker', start: new Date(2019, 9, 1), end: fin, classe: 'alterne'}
         ],
         // Data
         items = [
